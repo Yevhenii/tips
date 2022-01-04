@@ -1,0 +1,16 @@
+#How to add Toolchain repo in ubuntu (adds posibility to install fresh packages)
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+
+#How to make alternatives using gcc toolchain
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 110 --slave /usr/bin/g++ g++ /usr/bin/g++-11 --slave /usr/bin/gcov gcov /usr/bin/gcov-11
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 100 --slave /usr/bin/g++ g++ /usr/bin/g++-10 --slave /usr/bin/gcov gcov /usr/bin/gcov-10
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 90 --slave /usr/bin/g++ g++ /usr/bin/g++-9 --slave /usr/bin/gcov gcov /usr/bin/gcov-9
+
+#How to switch this alternatives
+sudo update-alternatives --config gcc
+
+#How to fix absence of underscore in geany
+Open in menu Tools > Configuration Files > filetypes.common
+And append to config
+[styling]
+line_height=0;2;
