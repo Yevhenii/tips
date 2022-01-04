@@ -1,2 +1,5 @@
 #How to install clion on ubuntu
 sudo snap install clion --classic
+
+#How to enable whitespace showing
+Go to File->Settings->Editor->General->Appearance and activate [Show whitespaces] checkbox
