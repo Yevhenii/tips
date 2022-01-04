@@ -1,0 +1,2 @@
+#How to install clion on ubuntu
+sudo snap install clion --classic
